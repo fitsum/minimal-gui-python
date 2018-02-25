@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import Tkinter as tk
 
 class App(tk.Frame):
