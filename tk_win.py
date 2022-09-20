@@ -13,8 +13,9 @@ class App(tk.Frame):
 
     def create_widgets(self):
         """ function creating app widgets """
-        self.quit_button = tk.Button(self, text='Quit',
-                                     command=self.quit)
+        self.quit_button = tk.Button(self)
+        self.quit_button["text"] = "Quit"
+        self.quit_button["command"] = self.quit
         self.quit_button.grid()
 
     def apply_settings(self):
