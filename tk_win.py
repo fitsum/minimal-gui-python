@@ -16,7 +16,10 @@ class App(tk.Frame):
         self.quit_button = tk.Button(self)
         self.quit_button["text"] = "Quit"
         self.quit_button["command"] = self.quit
-        self.quit_button.grid()
+        self.quit_button.grid(column=0, row=0)
+        self.label = tk.Label(self)
+        self.label["text"] = "Fitsum"
+        self.label.grid(column=1, row=0, padx=200)
 
     def apply_settings(self):
         """ function applying app configurations """
