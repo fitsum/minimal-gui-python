@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-import tkWin
+import tk_win
 
-tkWin.App()
+tk_win.App()
