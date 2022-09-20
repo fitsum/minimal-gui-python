@@ -9,6 +9,7 @@ class App(tk.Frame):
         self.grid()
         self.create_widgets()
         self.apply_settings()
+        self.hide_titlebar()
         self.mainloop()
 
     def create_widgets(self):
@@ -26,4 +27,7 @@ class App(tk.Frame):
         self.master.title('App')
         self.master.geometry("400x300")
         self.master.resizable()
-        # self.master.wm_overrideredirect(True)
+
+    def hide_titlebar(self):
+        """ function that hides titlebar """
+        self.master.wm_overrideredirect(True)
